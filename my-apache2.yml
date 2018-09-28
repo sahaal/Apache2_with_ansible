@@ -5,7 +5,7 @@
       command: echo hello bob   #command module
 
     - name: install apache2
-      apt: name=apache2 update_cache=yes state=latest  #APT module
+      yum: name=apache2 update_cache=yes state=latest  #APT module
 
     - name: enabled mod_rewrite
       apache2_module: name=rewrite state=present
